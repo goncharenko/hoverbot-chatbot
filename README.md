@@ -1,7 +1,7 @@
 # hoverbot-chatbot
 
 [![ClawHub](https://img.shields.io/badge/ClawHub-hoverbot--chatbot-00d4aa?style=flat-square)](https://clawhub.ai/goncharenko/hoverbot-chatbot)
-[![Version](https://img.shields.io/badge/version-1.0.1-blue?style=flat-square)](https://clawhub.ai/goncharenko/hoverbot-chatbot)
+[![Version](https://img.shields.io/badge/version-1.0.3-blue?style=flat-square)](https://clawhub.ai/goncharenko/hoverbot-chatbot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 A [ClawHub](https://clawhub.ai) skill that lets any AI agent create, customize, and embed AI chatbots on websites using [HoverBot](https://hoverbot.ai).

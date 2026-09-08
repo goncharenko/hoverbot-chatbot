@@ -1,7 +1,7 @@
 ---
 name: hoverbot-chatbot
 description: Create, embed, and manage AI chatbots for any website in under 2 minutes using HoverBot.
-version: 1.0.0
+version: 1.0.3
 author: HoverBot
 tags:
   - chatbot
@@ -18,7 +18,9 @@ metadata:
 
 # HoverBot Chatbot Skill
 
-Create, customize, and embed AI chatbots on any website. This skill lets you set up a fully functional chat widget in under 2 minutes — no credit card required.
+Release 1.0.3 corrects the documented widget configuration: `apiKey` is optional and is not read by the widget, and the default accent color is `#0037ff`.
+
+Create, customize, and embed AI chatbots on any website. This skill lets you set up a fully functional chat widget in under 2 minutes, with no credit card required.
 
 ## What This Skill Does
 
@@ -61,7 +63,7 @@ Paste this code before the closing `</body>` tag on any website:
 <script async src="https://cdn.hoverbot.ai/widget.js"></script>
 ```
 
-The `chatbotId` and `apiKey` values come from the dashboard — they are pre-filled when the bot is created.
+The `chatbotId` and `apiKey` values come from the dashboard and are pre-filled when the bot is created. Only `chatbotId` is required; the widget matches it against the allowed-domain list on your account.
 
 Once deployed, a chat icon appears in the bottom-right corner. Visitors click it to chat with the AI bot.
 
@@ -134,10 +136,10 @@ The `HOVERBOT_CONFIG` object supports these properties:
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| `chatbotId` | string | required | Your unique chatbot identifier |
-| `apiKey` | string | required | Your API key for authentication |
+| `chatbotId` | string | required | Your unique chatbot identifier. The widget authenticates on this plus the allowed-domain list configured in the dashboard. |
+| `apiKey` | string | optional | Emitted by the dashboard snippet for forward compatibility. The current widget build does not read it, and the widget works without it. |
 | `showFloatIcon` | boolean | `true` | Show/hide the default floating chat icon |
-| `primaryColor` | string | `"#4F46E5"` | Hex color for the chat header and accents |
+| `primaryColor` | string | `"#0037ff"` | Hex color for the chat header and accents |
 
 ## Use Cases for Molts
 
